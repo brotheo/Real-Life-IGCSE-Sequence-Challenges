@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>5 Difficult Real-Life IGCSE Sequence Challenges — Student Edition</title>
+<style>
+  :root {
+    --bg: #fafaf8;
+    --panel: #ffffff;
+    --ink: #1f2328;
+    --muted: #5b6472;
+    --accent: #b5451b;
+    --accent-soft: #f4e4dc;
+    --code-bg: #1e1e2e;
+    --code-ink: #e6e6ef;
+    --border: #e3e0da;
+    --hard: #c0522d;
+    --veryhard: #a12424;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Georgia", "Iowan Old Style", "Palatino Linotype", serif;
+    line-height: 1.65;
+  }
+  .wrap {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 48px 28px 96px;
+  }
+  header.doc-title {
+    text-align: center;
+    margin-bottom: 44px;
+  }
+  header.doc-title h1 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 2rem;
+    margin: 0 0 8px;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+  }
+  header.doc-title p {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    color: var(--muted);
+    margin: 0 0 4px;
+    font-size: 0.95rem;
+  }
+  header.doc-title .badge {
+    display: inline-block;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    border-radius: 999px;
+    padding: 4px 14px;
+    margin-top: 10px;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.4rem;
+    margin-top: 56px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--accent);
+    color: var(--ink);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.08rem;
+    margin-top: 28px;
+    color: var(--accent);
+  }
+  .challenge {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 28px 30px;
+    margin-top: 24px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  }
+  .difficulty {
+    display: inline-block;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 999px;
+    color: #fff;
+    background: var(--hard);
+    margin-bottom: 14px;
+  }
+  .difficulty.very-hard { background: var(--veryhard); }
+  ol, ul {
+    padding-left: 22px;
+  }
+  li { margin-bottom: 6px; }
+  pre {
+    background: var(--code-bg);
+    color: var(--code-ink);
+    padding: 16px 18px;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.88rem;
+    line-height: 1.55;
+    margin: 14px 0;
+  }
+  code {
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    background: var(--accent-soft);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.9em;
+  }
+  pre code {
+    background: none;
+    padding: 0;
+  }
+  .callout {
+    border-left: 4px solid var(--accent);
+    background: var(--accent-soft);
+    padding: 14px 18px;
+    border-radius: 0 6px 6px 0;
+    margin: 18px 0;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.95rem;
+  }
+  .callout strong {
+    color: var(--accent);
+  }
+  .task-label {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 0.78rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-top: 20px;
+    margin-bottom: 6px;
+  }
+  .boss {
+    margin-top: 60px;
+    background: linear-gradient(135deg, #2a1810, #1e1e2e);
+    color: #f2ece3;
+    border-radius: 12px;
+    padding: 32px 32px 28px;
+  }
+  .boss h2 {
+    color: #f2ece3;
+    border-bottom-color: #d97a4d;
+    margin-top: 0;
+  }
+  .boss h3 { color: #e8a87c; }
+  .boss pre {
+    background: rgba(0,0,0,0.35);
+  }
+  .boss ol {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.95rem;
+  }
+  .answer-box {
+    margin-top: 18px;
+    border: 1.5px dashed var(--border);
+    border-radius: 8px;
+    padding: 20px;
+    min-height: 90px;
+    background: repeating-linear-gradient(
+      var(--panel),
+      var(--panel) 27px,
+      var(--border) 28px
+    );
+  }
+  .boss .answer-box {
+    background: repeating-linear-gradient(
+      rgba(255,255,255,0.03),
+      rgba(255,255,255,0.03) 27px,
+      rgba(255,255,255,0.15) 28px
+    );
+    border-color: rgba(255,255,255,0.25);
+  }
+  .answer-label {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-top: 22px;
+    margin-bottom: 4px;
+  }
+  .boss .answer-label { color: #d8cfc4; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="doc-title">
+    <h1>5 Difficult Real-Life IGCSE Sequence Challenges</h1>
+    <p>Multiple inputs · intermediate calculations · dependency order · debugging — no IF, FOR, WHILE, or CASE</p>
+    <div class="badge">Student Worksheet</div>
+  </header>
+
+  <section class="challenge">
+    <div class="difficulty">Hard</div>
+    <h2 style="border:none;margin-top:0;padding-bottom:0;">1. ✈️ Flight Booking Calculator</h2>
+    <p>A travel company wants a program to calculate the total cost of a flight booking.</p>
+    <p>Write Cambridge pseudocode that:</p>
+    <ol>
+      <li>Inputs the <strong>ticket price</strong>.</li>
+      <li>Inputs the <strong>number of passengers</strong>.</li>
+      <li>Inputs the <strong>baggage fee per passenger</strong>.</li>
+      <li>Inputs the <strong>number of bags per passenger</strong>.</li>
+      <li>Calculates the ticket cost.</li>
+      <li>Calculates the total baggage cost.</li>
+      <li>Calculates the final booking cost.</li>
+      <li>Outputs the final booking cost.</li>
+    </ol>
+
+    <h3>Example</h3>
+    <pre><code>TicketPrice = 8500
+Passengers = 3
+BagFee = 1200
+BagsPerPassenger = 2</code></pre>
+
+    <div class="task-label">Student task</div>
+    <p>Write the complete Cambridge pseudocode.</p>
+    <div class="callout"><strong>Challenge:</strong> Explain which calculations must happen before <code>FinalCost</code> can be calculated.</div>
+    <div class="answer-box"></div>
+  </section>
+
+  <section class="challenge">
+    <div class="difficulty">Hard</div>
+    <h2 style="border:none;margin-top:0;padding-bottom:0;">2. 🏨 Hotel + Service Calculator</h2>
+    <p>A hotel charges:</p>
+    <ul>
+      <li>A room price per night</li>
+      <li>A breakfast price per person per day</li>
+      <li>A service charge calculated from the room cost</li>
+    </ul>
+    <p>Write pseudocode that:</p>
+    <ol>
+      <li>Inputs room price per night.</li>
+      <li>Inputs number of nights.</li>
+      <li>Inputs number of guests.</li>
+      <li>Inputs breakfast price per guest.</li>
+      <li>Inputs service charge percentage.</li>
+      <li>Calculates room cost.</li>
+      <li>Calculates breakfast cost.</li>
+      <li>Calculates service charge.</li>
+      <li>Calculates final cost.</li>
+      <li>Outputs all three costs and the final cost.</li>
+    </ol>
+
+    <h3>Example</h3>
+    <pre><code>Room = 2500
+Nights = 4
+Guests = 2
+Breakfast = 300
+ServiceCharge = 10</code></pre>
+
+    <h3>🔍 Sequence challenge</h3>
+    <div class="callout">Ask: <strong>Can the program calculate <code>ServiceChargeAmount</code> before calculating <code>RoomCost</code>? Explain why.</strong></div>
+    <div class="answer-box"></div>
+  </section>
+
+  <section class="challenge">
+    <div class="difficulty">Hard</div>
+    <h2 style="border:none;margin-top:0;padding-bottom:0;">3. 🛒 Online Shopping Checkout</h2>
+    <p>An online store needs to calculate a customer's final bill.</p>
+    <p>The program receives:</p>
+    <ul>
+      <li>Price of product</li>
+      <li>Quantity</li>
+      <li>Discount percentage</li>
+      <li>Delivery charge</li>
+      <li>Tax percentage</li>
+    </ul>
+    <p>Write Cambridge pseudocode that:</p>
+    <ol>
+      <li>Inputs the product price.</li>
+      <li>Inputs quantity.</li>
+      <li>Inputs discount percentage.</li>
+      <li>Inputs delivery charge.</li>
+      <li>Inputs tax percentage.</li>
+      <li>Calculates the subtotal.</li>
+      <li>Calculates the discount.</li>
+      <li>Calculates the price after discount.</li>
+      <li>Calculates tax.</li>
+      <li>Calculates the final cost.</li>
+      <li>Outputs the final cost.</li>
+    </ol>
+
+    <h3>Example</h3>
+    <pre><code>Price = 1200
+Quantity = 3
+Discount = 10
+Delivery = 150
+Tax = 7</code></pre>
+
+    <div class="callout">
+      <strong>🚨 Important</strong><br>
+      Think carefully about which value <code>Tax</code> needs to depend on before you decide where it goes in your sequence.
+    </div>
+    <div class="answer-box"></div>
+  </section>
+
+  <section class="challenge">
+    <div class="difficulty very-hard">Very Hard</div>
+    <h2 style="border:none;margin-top:0;padding-bottom:0;">4. 🎮 Game Tournament Score</h2>
+    <p>A game records a player's performance in three rounds.</p>
+    <p>The program must:</p>
+    <ol>
+      <li>Input the player's name.</li>
+      <li>Input Round 1 score.</li>
+      <li>Input Round 2 score.</li>
+      <li>Input Round 3 score.</li>
+      <li>Input a bonus score.</li>
+      <li>Calculate the total score.</li>
+      <li>Calculate the average score <strong>before the bonus</strong>.</li>
+      <li>Calculate the final score including the bonus.</li>
+      <li>Output the player's name.</li>
+      <li>Output the average.</li>
+      <li>Output the final score.</li>
+    </ol>
+
+    <h3>Example</h3>
+    <pre><code>Round1 = 80
+Round2 = 70
+Round3 = 90
+Bonus = 20</code></pre>
+
+    <h3>🧠 Sequence Detective</h3>
+    <div class="callout">
+      Ask yourself: <strong>Why should <code>Average</code> be calculated before adding the bonus?</strong><br><br>
+      Think about whether the same values could produce different results depending on when they are used.
+    </div>
+    <div class="answer-box"></div>
+  </section>
+
+  <section class="challenge">
+    <h2 style="border:none;margin-top:0;padding-bottom:0;">5. 🚗 Car Rental System — Expert Challenge</h2>
+    <p>A car rental company calculates the cost of a rental.</p>
+    <p>The program inputs:</p>
+    <ul>
+      <li>Daily rental price</li>
+      <li>Number of rental days</li>
+      <li>Insurance per day</li>
+      <li>Number of extra drivers</li>
+      <li>Extra driver fee per day</li>
+      <li>GPS rental per day</li>
+      <li>Tax percentage</li>
+    </ul>
+    <p>The program must calculate:</p>
+    <ol>
+      <li>Basic rental cost.</li>
+      <li>Insurance cost.</li>
+      <li>Extra driver cost.</li>
+      <li>GPS cost.</li>
+      <li>Subtotal.</li>
+      <li>Tax.</li>
+      <li>Final rental cost.</li>
+    </ol>
+
+    <h3>Example</h3>
+    <pre><code>DailyPrice = 1500
+Days = 5
+Insurance = 200
+ExtraDrivers = 2
+DriverFee = 150
+GPS = 100
+Tax = 7</code></pre>
+
+    <div class="task-label">🎯 Student task</div>
+    <p>Write the complete Cambridge pseudocode.</p>
+    <div class="callout">You are not given the formulas — work out each calculation yourself from the description above, and decide the correct order.</div>
+    <div class="answer-box" style="min-height:180px;"></div>
+  </section>
+
+  <div class="boss">
+    <h2>🧠 Final Boss — Debug the Sequence</h2>
+    <p>Here is a deliberately broken program:</p>
+    <pre><code>INPUT DailyPrice
+INPUT Days
+INPUT TaxPercent
+
+Tax ← Subtotal * TaxPercent / 100
+
+INPUT Insurance
+INPUT ExtraDrivers
+INPUT DriverFee
+INPUT GPS
+
+FinalCost ← Subtotal + Tax
+
+RentalCost ← DailyPrice * Days
+InsuranceCost ← Insurance * Days
+DriverCost ← ExtraDrivers * DriverFee * Days
+GPSCost ← GPS * Days
+
+Subtotal ← RentalCost + InsuranceCost + DriverCost + GPSCost
+
+OUTPUT FinalCost</code></pre>
+
+    <h3>Student instructions</h3>
+    <p><strong>Do not simply rewrite it.</strong></p>
+    <p>Find the sequence errors and explain:</p>
+    <ol>
+      <li>Which variables are being used before they are calculated?</li>
+      <li>Which calculation should happen first?</li>
+      <li>Which calculation depends on <code>Subtotal</code>?</li>
+      <li>Why can't <code>Tax</code> be calculated at the beginning?</li>
+      <li>Rewrite the complete algorithm correctly.</li>
+    </ol>
+
+    <div class="answer-label">Your answers (1–4)</div>
+    <div class="answer-box" style="min-height:130px;"></div>
+
+    <div class="answer-label">Your corrected algorithm (5)</div>
+    <div class="answer-box" style="min-height:220px;"></div>
+  </div>
+
+</div>
+</body>
+</html>

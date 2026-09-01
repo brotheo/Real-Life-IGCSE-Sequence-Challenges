@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>5 Difficult Real-Life IGCSE Sequence Challenges — Teacher Answer Key</title>
+<style>
+  :root {
+    --bg: #fafaf8;
+    --panel: #ffffff;
+    --ink: #1f2328;
+    --muted: #5b6472;
+    --accent: #b5451b;
+    --accent-soft: #f4e4dc;
+    --code-bg: #1e1e2e;
+    --code-ink: #e6e6ef;
+    --border: #e3e0da;
+    --hard: #c0522d;
+    --veryhard: #a12424;
+    --answer-bg: #eaf3ec;
+    --answer-border: #4c8c5c;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Georgia", "Iowan Old Style", "Palatino Linotype", serif;
+    line-height: 1.65;
+  }
+  .wrap {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 48px 28px 96px;
+  }
+  header.doc-title {
+    text-align: center;
+    margin-bottom: 44px;
+  }
+  header.doc-title h1 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 2rem;
+    margin: 0 0 8px;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+  }
+  header.doc-title p {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    color: var(--muted);
+    margin: 0 0 4px;
+    font-size: 0.95rem;
+  }
+  header.doc-title .badge {
+    display: inline-block;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #fff;
+    background: var(--answer-border);
+    border-radius: 999px;
+    padding: 4px 14px;
+    margin-top: 10px;
+  }
+  h2 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.4rem;
+    margin-top: 56px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--accent);
+    color: var(--ink);
+  }
+  h3 {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 1.08rem;
+    margin-top: 28px;
+    color: var(--accent);
+  }
+  .challenge {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 28px 30px;
+    margin-top: 24px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  }
+  .difficulty {
+    display: inline-block;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 999px;
+    color: #fff;
+    background: var(--hard);
+    margin-bottom: 14px;
+  }
+  .difficulty.very-hard { background: var(--veryhard); }
+  ol, ul {
+    padding-left: 22px;
+  }
+  li { margin-bottom: 6px; }
+  pre {
+    background: var(--code-bg);
+    color: var(--code-ink);
+    padding: 16px 18px;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 0.88rem;
+    line-height: 1.55;
+    margin: 14px 0;
+  }
+  code {
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    background: var(--accent-soft);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.9em;
+  }
+  pre code {
+    background: none;
+    padding: 0;
+  }
+  .callout {
+    border-left: 4px solid var(--accent);
+    background: var(--accent-soft);
+    padding: 14px 18px;
+    border-radius: 0 6px 6px 0;
+    margin: 18px 0;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.95rem;
+  }
+  .callout strong {
+    color: var(--accent);
+  }
+  .task-label {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 0.78rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-top: 20px;
+    margin-bottom: 6px;
+  }
+  .boss {
+    margin-top: 60px;
+    background: linear-gradient(135deg, #2a1810, #1e1e2e);
+    color: #f2ece3;
+    border-radius: 12px;
+    padding: 32px 32px 28px;
+  }
+  .boss h2 {
+    color: #f2ece3;
+    border-bottom-color: #d97a4d;
+    margin-top: 0;
+  }
+  .boss h3 { color: #e8a87c; }
+  .boss pre {
+    background: rgba(0,0,0,0.35);
+  }
+  .boss ol {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.95rem;
+  }
+  .answer-block {
+    margin-top: 18px;
+    border: 1.5px solid var(--answer-border);
+    border-radius: 8px;
+    background: var(--answer-bg);
+    padding: 4px 20px 20px;
+  }
+  .answer-block-label {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--answer-border);
+    margin: 14px 0 4px;
+  }
+  .answer-block pre {
+    margin-top: 6px;
+  }
+  .boss .answer-block {
+    background: rgba(76, 140, 92, 0.15);
+    border-color: #6fbf82;
+  }
+  .boss .answer-block-label {
+    color: #9fe0ac;
+  }
+  .expected {
+    font-family: "SFMono-Regular", Consolas, monospace;
+    font-size: 0.9rem;
+    background: rgba(76,140,92,0.08);
+    border: 1px dashed var(--answer-border);
+    border-radius: 6px;
+    padding: 12px 16px;
+    margin: 10px 0;
+  }
+  .discussion-answer {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 0.95rem;
+    margin: 0;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="doc-title">
+    <h1>5 Difficult Real-Life IGCSE Sequence Challenges</h1>
+    <p>Multiple inputs · intermediate calculations · dependency order · debugging — no IF, FOR, WHILE, or CASE</p>
+    <div class="badge">Teacher Answer Key</div>
+  </header>
+
+  <section class="challenge">
+    <div class="difficulty">Hard</div>
+    <h2 style="border:none;margin-top:0;padding-bottom:0;">1. ✈️ Flight Booking Calculator</h2>
+    <p>A travel company wants a program to calculate the total cost of a flight booking.</p>
+    <p>Write Cambridge pseudocode that:</p>
+    <ol>
+      <li>Inputs the <strong>ticket price</strong>.</li>
+      <li>Inputs the <strong>number of passengers</strong>.</li>
+      <li>Inputs the <strong>baggage fee per passenger</strong>.</li>
+      <li>Inputs the <strong>number of bags per passenger</strong>.</li>
+      <li>Calculates the ticket cost.</li>
+      <li>Calculates the total baggage cost.</li>
+      <li>Calculates the final booking cost.</li>
+      <li>Outputs the final booking cost.</li>
+    </ol>
+
+    <h3>Example</h3>
+    <pre><code>TicketPrice = 8500
+Passengers = 3
+BagFee = 1200
+BagsPerPassenger = 2</code></pre>
+
+    <p>Expected:</p>
+    <div class="expected">TicketCost = 25500
+BaggageCost = 7200
+FinalCost = 32700</div>
+
+    <div class="callout"><strong>Challenge question:</strong> Explain which calculations must happen before <code>FinalCost</code> can be calculated.</div>
+    <p class="discussion-answer"><strong>Model answer:</strong> Both <code>TicketCost</code> and <code>BaggageCost</code> must be calculated first, since <code>FinalCost</code> is their sum. Neither depends on the other, so they can be calculated in either order relative to each other — but both must come before <code>FinalCost</code>.</p>
+
+    <div class="answer-block">
+      <div class="answer-block-label">Answer pseudocode</div>
+<pre><code>INPUT TicketPrice
+INPUT Passengers
+INPUT BagFee
+INPUT BagsPerPassenger
+
+TicketCost ← TicketPrice * Passengers
+BaggageCost ← BagFee * BagsPerPassenger * Passengers
+
+FinalCost ← TicketCost + BaggageCost
+
+OUTPUT FinalCost</code></pre>
+    </div>
+  </section>
+
+  <section class="challenge">
+    <div class="difficulty">Hard</div>
+    <h2 style="border:none;margin-top:0;padding-bottom:0;">2. 🏨 Hotel + Service Calculator</h2>
+    <p>A hotel charges:</p>
+    <ul>
+      <li>A room price per night</li>
+      <li>A breakfast price per person per day</li>
+      <li>A service charge calculated from the room cost</li>
+    </ul>
+    <p>Write pseudocode that:</p>
+    <ol>
+      <li>Inputs room price per night.</li>
+      <li>Inputs number of nights.</li>
+      <li>Inputs number of guests.</li>
+      <li>Inputs breakfast price per guest.</li>
+      <li>Inputs service charge percentage.</li>
+      <li>Calculates room cost.</li>
+      <li>Calculates breakfast cost.</li>
+      <li>Calculates service charge.</li>
+      <li>Calculates final cost.</li>
+      <li>Outputs all three costs and the final cost.</li>
+    </ol>
+
+    <h3>Example</h3>
+    <pre><code>Room = 2500
+Nights = 4
+Guests = 2
+Breakfast = 300
+ServiceCharge = 10</code></pre>
+
+    <div class="expected">RoomCost = 10000
+BreakfastCost = 2400
+ServiceChargeAmount = 1000
+FinalCost = 13400</div>
+
+    <h3>🔍 Sequence challenge</h3>
+    <div class="callout">Ask: <strong>Can the program calculate <code>ServiceChargeAmount</code> before calculating <code>RoomCost</code>? Explain why.</strong></div>
+    <p class="discussion-answer"><strong>Model answer:</strong> No — <code>ServiceChargeAmount</code> is a percentage of <code>RoomCost</code>, so <code>RoomCost</code> must exist first. Calculating it earlier would use an undefined or zero value.</p>
+
+    <div class="answer-block">
+      <div class="answer-block-label">Answer pseudocode</div>
+<pre><code>INPUT Room
+INPUT Nights
+INPUT Guests
+INPUT Breakfast
+INPUT ServiceCharge
+
+RoomCost ← Room * Nights
+BreakfastCost ← Breakfast * Guests * Nights
+ServiceChargeAmount ← RoomCost * ServiceCharge / 100
+
+FinalCost ← RoomCost + BreakfastCost + ServiceChargeAmount
+
+OUTPUT RoomCost
+OUTPUT BreakfastCost
+OUTPUT ServiceChargeAmount
+OUTPUT FinalCost</code></pre>
+    </div>
+  </section>
+
+  <section class="challenge">
+    <div class="difficulty">Hard</div>
+    <h2 style="border:none;margin-top:0;padding-bottom:0;">3. 🛒 Online Shopping Checkout</h2>
+    <p>An online store needs to calculate a customer's final bill.</p>
+    <p>The program receives:</p>
+    <ul>
+      <li>Price of product</li>
+      <li>Quantity</li>
+      <li>Discount percentage</li>
+      <li>Delivery charge</li>
+      <li>Tax percentage</li>
+    </ul>
+    <p>Write Cambridge pseudocode that:</p>
+    <ol>
+      <li>Inputs the product price.</li>
+      <li>Inputs quantity.</li>
+      <li>Inputs discount percentage.</li>
+      <li>Inputs delivery charge.</li>
+      <li>Inputs tax percentage.</li>
+      <li>Calculates the subtotal.</li>
+      <li>Calculates the discount.</li>
+      <li>Calculates the price after discount.</li>
+      <li>Calculates tax.</li>
+      <li>Calculates the final cost.</li>
+      <li>Outputs the final cost.</li>
+    </ol>
+
+    <h3>Formula</h3>
+    <pre><code>Subtotal = Price × Quantity
+
+Discount = Subtotal × DiscountPercent / 100
+
+AfterDiscount = Subtotal - Discount
+
+Tax = AfterDiscount × TaxPercent / 100
+
+FinalCost = AfterDiscount + Tax + Delivery</code></pre>
+
+    <h3>Example</h3>
+    <pre><code>Price = 1200
+Quantity = 3
+Discount = 10
+Delivery = 150
+Tax = 7</code></pre>
+
+    <div class="expected">Subtotal = 3600
+Discount = 360
+AfterDiscount = 3240
+Tax = 226.8
+FinalCost = 3616.8</div>
+
+    <div class="callout">
+      <strong>🚨 Important</strong><br>
+      Students must recognize that <code>Tax</code> depends on <code>AfterDiscount</code>. Therefore, the sequence matters.
+    </div>
+
+    <div class="answer-block">
+      <div class="answer-block-label">Answer pseudocode</div>
+<pre><code>INPUT Price
+INPUT Quantity
+INPUT DiscountPercent
+INPUT Delivery
+INPUT TaxPercent
+
+Subtotal ← Price * Quantity
+Discount ← Subtotal * DiscountPercent / 100
+AfterDiscount ← Subtotal - Discount
+Tax ← AfterDiscount * TaxPercent / 100
+
+FinalCost ← AfterDiscount + Tax + Delivery
+
+OUTPUT FinalCost</code></pre>
+    </div>
+  </section>
+
+  <section class="challenge">
+    <div class="difficulty very-hard">Very Hard</div>
+    <h2 style="border:none;margin-top:0;padding-bottom:0;">4. 🎮 Game Tournament Score</h2>
+    <p>A game records a player's performance in three rounds.</p>
+    <p>The program must:</p>
+    <ol>
+      <li>Input the player's name.</li>
+      <li>Input Round 1 score.</li>
+      <li>Input Round 2 score.</li>
+      <li>Input Round 3 score.</li>
+      <li>Input a bonus score.</li>
+      <li>Calculate the total score.</li>
+      <li>Calculate the average score <strong>before the bonus</strong>.</li>
+      <li>Calculate the final score including the bonus.</li>
+      <li>Output the player's name.</li>
+      <li>Output the average.</li>
+      <li>Output the final score.</li>
+    </ol>
+
+    <h3>Example</h3>
+    <pre><code>Round1 = 80
+Round2 = 70
+Round3 = 90
+Bonus = 20</code></pre>
+
+    <div class="expected">Total = 240
+Average = 80
+FinalScore = 260</div>
+
+    <h3>🧠 Sequence Detective</h3>
+    <div class="callout">
+      Ask students: <strong>Why should <code>Average</code> be calculated before adding the bonus?</strong>
+    </div>
+    <p class="discussion-answer"><strong>Model answer:</strong> If the bonus were added to <code>Total</code> before <code>Average</code> is calculated, the average would be inflated and would no longer represent the player's true round-by-round performance. Order changes the meaning of the result, not just the number of steps.</p>
+
+    <div class="answer-block">
+      <div class="answer-block-label">Answer pseudocode</div>
+<pre><code>INPUT PlayerName
+INPUT Round1
+INPUT Round2
+INPUT Round3
+INPUT Bonus
+
+Total ← Round1 + Round2 + Round3
+Average ← Total / 3
+FinalScore ← Total + Bonus
+
+OUTPUT PlayerName
+OUTPUT Average
+OUTPUT FinalScore</code></pre>
+    </div>
+  </section>
+
+  <section class="challenge">
+    <h2 style="border:none;margin-top:0;padding-bottom:0;">5. 🚗 Car Rental System — Expert Challenge</h2>
+    <p>A car rental company calculates the cost of a rental.</p>
+    <p>The program inputs:</p>
+    <ul>
+      <li>Daily rental price</li>
+      <li>Number of rental days</li>
+      <li>Insurance per day</li>
+      <li>Number of extra drivers</li>
+      <li>Extra driver fee per day</li>
+      <li>GPS rental per day</li>
+      <li>Tax percentage</li>
+    </ul>
+    <p>The program must calculate:</p>
+    <ol>
+      <li>Basic rental cost.</li>
+      <li>Insurance cost.</li>
+      <li>Extra driver cost.</li>
+      <li>GPS cost.</li>
+      <li>Subtotal.</li>
+      <li>Tax.</li>
+      <li>Final rental cost.</li>
+    </ol>
+
+    <h3>Required formulas</h3>
+    <pre><code>RentalCost = DailyPrice × Days
+
+InsuranceCost = Insurance × Days
+
+DriverCost = ExtraDrivers × DriverFee × Days
+
+GPSCost = GPS × Days
+
+Subtotal = RentalCost + InsuranceCost + DriverCost + GPSCost
+
+Tax = Subtotal × TaxPercent / 100
+
+FinalCost = Subtotal + Tax</code></pre>
+
+    <h3>Example</h3>
+    <pre><code>DailyPrice = 1500
+Days = 5
+Insurance = 200
+ExtraDrivers = 2
+DriverFee = 150
+GPS = 100
+Tax = 7</code></pre>
+
+    <div class="expected">RentalCost = 7500
+InsuranceCost = 1000
+DriverCost = 1500
+GPSCost = 500
+Subtotal = 10500
+Tax = 735
+FinalCost = 11235</div>
+
+    <div class="callout">Reminder for delivery: students should not be given the formulas initially — make them derive each calculation from the problem description, then check their working against this key.</div>
+
+    <div class="answer-block">
+      <div class="answer-block-label">Answer pseudocode</div>
+<pre><code>INPUT DailyPrice
+INPUT Days
+INPUT Insurance
+INPUT ExtraDrivers
+INPUT DriverFee
+INPUT GPS
+INPUT TaxPercent
+
+RentalCost ← DailyPrice * Days
+InsuranceCost ← Insurance * Days
+DriverCost ← ExtraDrivers * DriverFee * Days
+GPSCost ← GPS * Days
+
+Subtotal ← RentalCost + InsuranceCost + DriverCost + GPSCost
+Tax ← Subtotal * TaxPercent / 100
+FinalCost ← Subtotal + Tax
+
+OUTPUT RentalCost
+OUTPUT InsuranceCost
+OUTPUT DriverCost
+OUTPUT GPSCost
+OUTPUT Subtotal
+OUTPUT Tax
+OUTPUT FinalCost</code></pre>
+    </div>
+  </section>
+
+  <div class="boss">
+    <h2>🧠 Final Boss — Debug the Sequence</h2>
+    <p>Broken program given to students:</p>
+    <pre><code>INPUT DailyPrice
+INPUT Days
+INPUT TaxPercent
+
+Tax ← Subtotal * TaxPercent / 100
+
+INPUT Insurance
+INPUT ExtraDrivers
+INPUT DriverFee
+INPUT GPS
+
+FinalCost ← Subtotal + Tax
+
+RentalCost ← DailyPrice * Days
+InsuranceCost ← Insurance * Days
+DriverCost ← ExtraDrivers * DriverFee * Days
+GPSCost ← GPS * Days
+
+Subtotal ← RentalCost + InsuranceCost + DriverCost + GPSCost
+
+OUTPUT FinalCost</code></pre>
+
+    <h3>Student instructions</h3>
+    <p><strong>Do not simply rewrite it.</strong> Find the sequence errors and explain:</p>
+    <ol>
+      <li>Which variables are being used before they are calculated?</li>
+      <li>Which calculation should happen first?</li>
+      <li>Which calculation depends on <code>Subtotal</code>?</li>
+      <li>Why can't <code>Tax</code> be calculated at the beginning?</li>
+      <li>Rewrite the complete algorithm correctly.</li>
+    </ol>
+
+    <div class="answer-block">
+      <div class="answer-block-label">Model answers (1–4)</div>
+      <ol class="discussion-answer">
+        <li><code>Subtotal</code> is used in the <code>Tax</code> calculation before it has been given a value — at that point in the program it is undefined.</li>
+        <li><code>RentalCost</code>, <code>InsuranceCost</code>, <code>DriverCost</code>, and <code>GPSCost</code> should be calculated first, since <code>Subtotal</code> is their sum.</li>
+        <li><code>Tax</code> and <code>FinalCost</code> both depend on <code>Subtotal</code>. <code>Tax</code> needs it directly for the percentage calculation, and <code>FinalCost</code> needs it as the base to add <code>Tax</code> onto.</li>
+        <li><code>Tax</code> can't be calculated at the beginning because it is a percentage of <code>Subtotal</code>, and <code>Subtotal</code> itself depends on four other values (<code>RentalCost</code>, <code>InsuranceCost</code>, <code>DriverCost</code>, <code>GPSCost</code>) that haven't been input or calculated yet at that point.</li>
+      </ol>
+    </div>
+
+    <div class="answer-block">
+      <div class="answer-block-label">Corrected algorithm (5)</div>
+<pre><code>INPUT DailyPrice
+INPUT Days
+INPUT TaxPercent
+INPUT Insurance
+INPUT ExtraDrivers
+INPUT DriverFee
+INPUT GPS
+
+RentalCost ← DailyPrice * Days
+InsuranceCost ← Insurance * Days
+DriverCost ← ExtraDrivers * DriverFee * Days
+GPSCost ← GPS * Days
+
+Subtotal ← RentalCost + InsuranceCost + DriverCost + GPSCost
+
+Tax ← Subtotal * TaxPercent / 100
+
+FinalCost ← Subtotal + Tax
+
+OUTPUT FinalCost</code></pre>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
